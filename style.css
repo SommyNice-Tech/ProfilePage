@@ -13,8 +13,8 @@ body {
 
 header {
   text-align: center;
-  padding: 20px;
-  background-color: #222;
+  padding: 30px;
+ background: linear-gradient(135deg, #222, #444);
   color: white;
 }
 
@@ -85,6 +85,7 @@ button {
   background-color: #222;
   color: white;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 button:hover {
