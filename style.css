@@ -37,6 +37,13 @@ nav a:hover {
   margin: auto;
 }
 
+.project-card{
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
 section {
   margin: 20px 0;
   padding: 20px;
