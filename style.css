@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
