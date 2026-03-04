@@ -29,3 +29,15 @@ ul{
     list-style-type: square;
     margin-left: 20px;
 }
+
+button{
+    padding: 8px 15px;
+    border: none;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #555;
+}
