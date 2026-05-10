@@ -3,90 +3,269 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Page</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
-    <header>
-      <img src="images/logo.png" alt="SommyNice logo" />
-      <h1>SommyNice</h1>
-      <h4>Web developer</h4>
-      <nav>
-        <ul>
-          <li><a href="#"> LinkedIn </a></li>
-          <li><a href="#"> Twitter </a></li>
-          <li>
-            <a href="https://github.com/SommyNice-Tech">My GitHub</a>
-          </li>
-        </ul>
-      </nav>
-      <button id="darkModeToggle">Toggle Dark Mode</button>
-    </header>
-
-    <div class="container">
-      <!-- About section -->
-      <section>
-        <h2>About Me</h2>
-        <p>
-          Hi, I'm Sommy. I am on a focused journey to become a job-ready
-          professional Full-Stack Developer. Every day, I practice coding, build
-          projects, and improve my problem-solving skills. I am building my
-          skills in HTML, CSS, and JavaScript and working on projects daily. I
-          am Passionate about building modern and responsive websites.
-        </p>
-        <p>
-          My focus is on blending design and functionality to deliver
-          experiences that not only look good but also work seamlessly.
-        </p>
-
-        <p>
-          With an eye for detail and a love for minimal yet impactful design, I
-          create websites that reflect each brand's unique identity. Whether
-          it's building from scratch or refining existing designs, my goal is
-          always the same-helping businesses and individual shine online.
-        </p>
-        <img src="" alt="profile-picture" />
-      </section>
-
-      <section>
-        <h2>Projects</h2>
-
-        <div class="project-card">
-          <h3>Profile Page</h3>
-          <p>A personal profile website built with HTML and CSS.</p>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/mylogo.png" height="100" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="content">
+          <div class="content-text">
+            <div class="header-text">
+              <p>Web Designer</p>
+              <h1>
+                Hi, I'm <span>SommyNice</span> <br />
+                from Nigeria
+              </h1>
+            </div>
+            <div class="profile-photo">
+              <img src="images/myphoto.png" height="400" alt="profile-photo" />
+            </div>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Coming Soon Project</h3>
-          <p>Another project I will build soon.</p>
+        <div class="buttons">
+          <a href="#" class="primary">Get In Touch</a>
+          <a href="#" class="secondary">Resume</a>
         </div>
-      </section>
-
-      <!-- Skill section  -->
-      <section>
-        <h2>My skills</h2>
-        <ul>
-          <li>HTML (Semantic Structure)</li>
-          <li>CSS (Responsive Design Basics)</li>
-          <li>Git Version Control</li>
-          <li>GitHub Repository Management</li>
-        </ul>
-      </section>
-
-      <!-- contact function -->
-      <section>
-        <form>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-          <br />
-          <label for="message">Message</label>
-          <textarea name="message" id="message" required></textarea>
-          <br />
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+      </div>
     </div>
-    <!-- footer section  -->
-    <footer>Copyrite &copy;2026 SommyNice</footer>
+    <!-- -------about------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/myphoto2.png" alt="myphoto2" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, I'm Sommy. I am on a focused journey to become a job-ready
+              professional Full-Stack Developer. Every day, I practice coding,
+              build projects, and improve my problem-solving skills. I am
+              building my skills in HTML, CSS, and JavaScript and working on
+              projects daily. I am Passionate about building modern and
+              responsive websites.
+            </p>
+            <br />
+            <p>
+              My focus is on blending design and functionality to deliver
+              experiences that not only look good but also work seamlessly. With
+              an eye for detail and a love for minimal yet impactful design, I
+              create websites that reflect each brand's unique identity. Whether
+              it's building from scratch or refining existing designs, my goal
+              is always the same-helping businesses and individual shine online.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skils')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span> <br />Wed app Development</li>
+                <li><span>UI/UX</span> <br />Designing Website interfaces</li>
+                <li><span>App Development</span> <br />Coming Soon</li>
+                <li><span>Web3</span> <br />Coming Soon</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021-Current</span> <br />UI/UX Design Traning at NSIT
+                  Institute
+                </li>
+                <li>
+                  <span>2019-2021</span> <br />Ui/UX Design at Coin Digital Ltd
+                </li>
+                <li>
+                  <span>2016-2017</span> <br />Internship at ekart eCommerce
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016</span> <br />UI/UX Design Traning at ET Institute
+                </li>
+                <li><span>2016</span> <br />MBA from MIT Bangalore</li>
+                <li><span>2014</span> <br />BBA from ISM Banggalore</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------services------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quaerat facere error alias ipsa? Quia, dolores optio cumque magni
+              alias accusamus itaque labore doloremque placeat harum aut numquam
+              consequatur explicabo!
+            </p>
+            <a href="#">learn More</a>
+          </div>
+
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quaerat facere error alias ipsa? Quia, dolores optio cumque magni
+              alias accusamus itaque labore doloremque placeat harum aut numquam
+              consequatur explicabo!
+            </p>
+            <a href="#">learn More</a>
+          </div>
+
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quaerat facere error alias ipsa? Quia, dolores optio cumque magni
+              alias accusamus itaque labore doloremque placeat harum aut numquam
+              consequatur explicabo!
+            </p>
+            <a href="#">learn More</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Web3</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quaerat facere error alias ipsa? Quia, dolores optio cumque magni
+              alias accusamus itaque labore doloremque placeat harum aut numquam
+              consequatur explicabo!
+            </p>
+            <a href="#">learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------portfolio----- -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/LearnifyHomePage.png" alt="LearnifyHomePage" />
+            <div class="layer">
+              <h3>Learnify</h3>
+              <p>
+                A fully responsive, single-page educational platform designed to
+                host a wide range of tech courses. This project was a deep dive
+                into semantic HTML and advanced CSS techniques, focusing on
+                creating a professional-grade UI/UX without the use of
+                JavaScript or external libraries.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="../pictures/download-26.jpg" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connect you to the talented people around the world.
+                download it from play store
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="../pictures/download-27.jpg" />
+            <div class="layer">
+              <h3>Online shopping App</h3>
+              <p>
+                The app connect you to the talented people around the world.
+                download it from play store
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- --------contact--------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fas fa-paper-plane"></i>contact@sommynice788@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i>09157375252</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="" download class="btn btn2">Download Cv</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Email"
+                placeholder="your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copywrite">
+        <p>copywrite &copy; SommyNice 2026</p>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
