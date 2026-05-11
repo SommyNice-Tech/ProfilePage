@@ -122,11 +122,14 @@ nav ul li a:hover::after {
 
 .secondary {
   background: transparent;
-  border: 2px solid white;
+  border: 2px solid #27cbe4;
   color: white;
   padding: 12px 25px;
   border-radius: 6px;
   text-decoration: none;
+}
+.secondary:hover{
+background: #27cbe4;
 }
 .btn {
   display: block;
@@ -151,7 +154,7 @@ nav ul li a:hover::after {
   flex-wrap: wrap;
 }
 .about-col-1 {
-  flex-basis: 35%;
+  flex-basis: 60%;
 }
 .about-col-1 img {
   width: 100%;
@@ -159,7 +162,7 @@ nav ul li a:hover::after {
   border-radius: 15%;
 }
 .about-col-2 {
-  flex-basis: 60%;
+  flex-basis: 35%;
 }
 
 .sub-title {

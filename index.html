@@ -51,9 +51,6 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/myphoto2.png" alt="myphoto2" />
-          </div>
-          <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
               Hi, I'm Sommy. I am on a focused journey to become a job-ready
@@ -72,15 +69,22 @@
               it's building from scratch or refining existing designs, my goal
               is always the same-helping businesses and individual shine online.
             </p>
-
+            <!-- <img src="images/myphoto2.png" alt="myphoto2" /> -->
+          </div>
+          <div class="about-col-2">
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skils')">
+              <p
+                class="tab-links active-link"
+                onclick="opentab(event, 'skills')"
+              >
                 Skills
               </p>
-              <p class="tab-links" onclick="opentab('experience')">
+              <p class="tab-links" onclick="opentab(event, 'experience')">
                 Experience
               </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab(event, 'education')">
+                Education
+              </p>
             </div>
 
             <div class="tab-contents active-tab" id="skills">
@@ -189,15 +193,15 @@
                 A fully responsive, single-page educational platform designed to
                 host a wide range of tech courses. This project was a deep dive
                 into semantic HTML and advanced CSS techniques, focusing on
-                creating a professional-grade UI/UX without the use of
-                JavaScript or external libraries.
+                creating a professional-grade UI/UX without the use of external
+                libraries.
               </p>
               <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
 
           <div class="work">
-            <img src="../pictures/download-26.jpg" />
+            <img src="" />
             <div class="layer">
               <h3>Music App</h3>
               <p>
@@ -209,7 +213,7 @@
           </div>
 
           <div class="work">
-            <img src="../pictures/download-27.jpg" />
+            <img src="" />
             <div class="layer">
               <h3>Online shopping App</h3>
               <p>
@@ -243,16 +247,20 @@
             <a href="" download class="btn btn2">Download Cv</a>
           </div>
           <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
+            <form
+              action="https://script.google.com/macros/s/AKfycbyI5TC5leQBWeRcm7VGezshGypsv5u8hGATpL05fxG1bY7ZL8p4eVzq69536Gl-urDCHw/exec"
+              name="submit-to-google-sheet"
+              method="post"
+            >
+              <input type="text" name="name" placeholder="Your Name" required />
               <input
-                type="text"
-                name="Email"
+                type="email"
+                name="email"
                 placeholder="your Email"
                 required
               />
               <textarea
-                name="Message"
+                name="message"
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
@@ -267,6 +275,7 @@
       </div>
     </div>
 
+    <!-- https://script.google.com/macros/s/AKfycbz4tzKPJNVAdjcnQCxXpTCfrmhfRMbKb_ZN6WFS5EnkdtgKgTHaOUCIOusBh7kQ1zw-sw/exec -->
     <script src="script.js"></script>
   </body>
 </html>
